@@ -3,15 +3,16 @@ import Link from 'next/link';
 import React from 'react'
 
 type Props = {
+    order: number;
     num: string;
     image: string;
     title: string;
     description: string;
 }
 
-const HowItWorksCard = ({ num, image, title, description }: Props) => {
+const HowItWorksCard = ({ order, num, image, title, description }: Props) => {
   return (
-    <div className='relative flex flex-col'>
+    <div className='relative flex flex-col' data-aos='fade-right' data-aos-anchor-placement='top-center' {...(order !== 0 && { 'data-aos-delay': `${order}00` })}>
         <Image 
             src={image} 
             alt={title ?? 'service'} 

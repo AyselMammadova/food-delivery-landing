@@ -22,6 +22,7 @@ const Feature = () => {
                 {features.map((feature, i) => (
                     <FeatureCard
                         key={i}
+                        order={i}
                         icon={feature.icon}
                         title={feature.title}
                     />

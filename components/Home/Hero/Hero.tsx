@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className='relative w-full h-screen flex justify-center flex-col'>
         <div className='w-[90%] md:w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-6 xl:gap-10'>
-            <div className='lg:col-span-4 xl:col-span-3'>
+            <div data-aos='fade-up' className='lg:col-span-4 xl:col-span-3'>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl my-6 font-extrabold leading-[2.5rem] md:leading-[3rem] lg:leading-[4rem]'>
                     Your favorite food, <br className='hidden xl:block' />
                     <span className='text-pink-600'>delivered</span> your home
@@ -76,7 +76,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <figure className='col-span-2 xl:col-span-3 mx-auto hidden lg:block'>
+            <figure data-aos='fade-left' data-aos-delay='150' className='col-span-2 xl:col-span-3 mx-auto hidden lg:block'>
                 <Image src='/images/hero.png' alt='hero image' width={540} height={472} priority />
             </figure>
         </div>

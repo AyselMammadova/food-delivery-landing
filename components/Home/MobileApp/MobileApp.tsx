@@ -8,11 +8,12 @@ const MobileApp = () => {
     <div className="py-16">
       <div className="w-[80%] mx-auto mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         <Image
-          src="/images/app.webp"
-          alt="app"
-          width={800}
-          height={800}
-          className="object-cover"
+            src="/images/app.webp"
+            alt="app"
+            width={800}
+            height={800}
+            className="object-cover"
+            data-aos='zoom-in' data-aos-anchor-placement='top-center'
         />
 
         <div>

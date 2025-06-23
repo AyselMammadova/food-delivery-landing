@@ -23,6 +23,7 @@ const Restaurant = () => {
         {restaurants.map((restaurant, i) => (
           <RestaurantCard 
             key={i}
+            order={i}
             url={restaurant.url}
             image={restaurant.image} 
             title={restaurant.title}

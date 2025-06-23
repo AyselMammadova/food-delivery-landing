@@ -19,6 +19,7 @@ const HowItWorks = () => {
         {services.map((service, i) => (
           <HowItWorksCard 
             key={i}
+            order={i}
             num={service.num}
             image={service.image}
             title={service.title}

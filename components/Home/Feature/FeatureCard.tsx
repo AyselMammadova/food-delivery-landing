@@ -2,13 +2,14 @@ import Image from 'next/image';
 import React from 'react'
 
 type Props = {
+    order: number;
     icon: string;
     title: string;
 }
 
-const FeatureCard = ({ icon, title }: Props) => {
+const FeatureCard = ({ order, icon, title }: Props) => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col' data-aos='fade-up' data-aos-anchor-placement='top-center' {...(order !== 0 && { 'data-aos-delay': `${order}00` })}>
         <Image 
             src={icon} 
             alt={title ?? 'feature'} 

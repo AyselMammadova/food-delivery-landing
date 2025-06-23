@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='py-16'>
         <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-            <figure>
+            <figure data-aos='fade-right' data-aos-anchor-placement='top-center'>
                 <Image
                     src={'/images/about.webp'} 
                     alt='about' 

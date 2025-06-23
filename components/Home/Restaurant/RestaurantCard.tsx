@@ -3,15 +3,16 @@ import Link from 'next/link';
 import React from 'react'
 
 type Props = {
+    order: number;
     url: string;
     image: string;
     title: string;
     tags: string[]; 
 }
 
-const RestaurantCard = ({ url, image, title, tags }: Props) => {
+const RestaurantCard = ({ order, url, image, title, tags }: Props) => {
     return (
-        <Link href={url} title={title} className='group'>
+        <Link href={url} title={title} className='group' data-aos='fade-up' data-aos-anchor-placement='top-center' {...(order !== 0 && { 'data-aos-delay': `${order}00` })}>
             <Image 
                 src={image} 
                 alt={title ?? 'restaurant image'} 

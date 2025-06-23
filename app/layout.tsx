@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveHeader from "@/components/Common/Header/ResponsiveHeader";
 import Provider from "@/components/HOC/Provider";
 import Footer from "@/components/Common/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 const font = Manrope({
   weight:['200', '300', '400', '500', '600', '700', '800'],
@@ -27,6 +28,7 @@ export default function RootLayout({
           <ResponsiveHeader />
           {children}
           <Footer />
+          <ScrollToTop />
         </Provider>
       </body>
     </html>

@@ -33,6 +33,7 @@ const Category = () => {
                         key={i} 
                         className='px-6 py-3 rounded-full cursor-pointer hover:bg-emerald-600 hover:text-white transition-all duration-300 bg-gray-100 
                         text-gray-900 font-semibold text-lg dark:bg-gray-800 dark:text-white'
+                        data-aos='zoom-in' data-aos-anchor-placement='top-center' {...(i !== 0 && { 'data-aos-delay': `${i}00` })}
                     >
                         {category.name}
                     </div>
